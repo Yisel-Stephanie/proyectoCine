@@ -1,0 +1,47 @@
+
+@media only screen and (min-width:768px ) {
+    .novedades{
+       display: flex;
+       justify-content: center;   
+    }
+    
+ }
+ 
+ .tablaTop{
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    
+ }
+ th,td {
+    background-color: $color7;
+    color: $color6;
+ }  
+ 
+ .novedades-promos{
+    margin: $marginBasico;    
+    width: 250px;
+    height: 290px;
+    background-image: url("../imagenes/promoMes.jpg"); 
+    .novedades-promo__infoImagen{
+        width: 250px;
+        height: 290px;
+        background-color:rgb(0, 0, 0,0.9);
+        opacity: 0;
+        color: $color6;
+        transition: all 1s;
+     }
+     .novedades-promo__infoImagen:hover {
+        opacity: 1;
+        text-align: center ;
+        font-size: 2rem; 
+     }
+     .novedes-promo__btn { 
+        border-radius: 50%;
+        a{
+            text-decoration: none;
+            color: $color6;          
+        }
+     }   
+}
+ 

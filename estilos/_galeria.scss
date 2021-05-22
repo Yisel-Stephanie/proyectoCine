@@ -1,0 +1,68 @@
+//Estilos generales de la galeria Movile First
+.galeria{
+  margin: $marginBasico; 
+  background-image: linear-gradient($color1,$color6,$color1);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1%;
+  padding-bottom: 35%;
+  padding-top: 1%;
+
+  .galeria-items__item {
+    width: 150px;
+    height: 200px;    
+  }
+   a{
+    text-decoration: none;
+    color:$color2;
+    text-transform: uppercase;
+  }
+
+    .galeria-items__item:hover{      
+        transform: scale(0.95);
+        border-radius: 25%;
+        box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 1);
+    }
+}
+
+//Bucle Each:
+$posters:akira,atakan,caos,demon,espiral,freaky,cien,guerra,godzilla,mortal,nadie,peq,ruega,tom;
+@each $poster in $posters {
+   .#{$poster}-item{
+   background-image: url("../imagenes/#{$poster}.jpg");    
+   }   
+}
+
+//Media queries:
+@media only screen and (min-width:550px) {
+  .galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1%;
+    padding-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1%;
+    padding-bottom: 5%;
+  }
+
+}
+
+@media only screen and (min-width:992px) {
+  .galeria{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1%;
+    padding-bottom: 5%;
+  }
+  .galeria-items__item {
+    width: 200px;
+    height: 280px;    
+  }
+
+}

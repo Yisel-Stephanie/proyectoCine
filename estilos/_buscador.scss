@@ -1,0 +1,17 @@
+@import "generales";
+
+.formBuscador{
+    margin: $marginBasico;
+    .formBuscador-opciones__item{
+        border-radius: 100px;
+        padding: 1%;
+        margin: $marginBasico;  
+        border: 1px solid $color1;
+        background-color: $color1;
+        color: $color2;      
+    }
+    .formBuscador-opciones__item:hover{
+        background-color: $color6;
+    }
+ }
+
