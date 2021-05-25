@@ -19,10 +19,16 @@ h1 {
   color: #3054a1;
 }
 
-h2, h3, h4 {
+h2 {
   color: #3054a1;
   font-family: "Raleway", sans-serif;
   font-size: 1.5em;
+}
+
+h3, h4 {
+  color: #3054a1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
 
 .videoPresentacion {
@@ -88,10 +94,16 @@ h1 {
   color: #3054a1;
 }
 
-h2, h3, h4 {
+h2 {
   color: #3054a1;
   font-family: "Raleway", sans-serif;
   font-size: 1.5em;
+}
+
+h3, h4 {
+  color: #3054a1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
 
 .principal {
@@ -152,10 +164,16 @@ h1 {
   color: #3054a1;
 }
 
-h2, h3, h4 {
+h2 {
   color: #3054a1;
   font-family: "Raleway", sans-serif;
   font-size: 1.5em;
+}
+
+h3, h4 {
+  color: #3054a1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
 
 * {
@@ -179,10 +197,16 @@ h1 {
   color: #3054a1;
 }
 
-h2, h3, h4 {
+h2 {
   color: #3054a1;
   font-family: "Raleway", sans-serif;
   font-size: 1.5em;
+}
+
+h3, h4 {
+  color: #3054a1;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
 
 .formBuscador {
@@ -216,7 +240,6 @@ h2, h3, h4 {
 .galeria a {
   text-decoration: none;
   color: #d4ccff;
-  text-transform: uppercase;
 }
 .galeria .galeria-items__item:hover {
   transform: scale(0.95);

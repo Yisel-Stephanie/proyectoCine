@@ -14,8 +14,7 @@
   }
    a{
     text-decoration: none;
-    color:$color2;
-    text-transform: uppercase;
+    color:$color2;    
   }
 
     .galeria-items__item:hover{      
@@ -29,7 +28,8 @@
 $posters:akira,atakan,caos,demon,espiral,freaky,cien,guerra,godzilla,mortal,nadie,peq,ruega,tom;
 @each $poster in $posters {
    .#{$poster}-item{
-   background-image: url("../imagenes/#{$poster}.jpg");    
+   background-image: url("../imagenes/#{$poster}.jpg");  
+   
    }   
 }
 
