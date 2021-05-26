@@ -1,12 +1,12 @@
-.nav-item__promos{
-    background-color:none;
+.nav-item__promos{  
     border: 2px solid $color6; 
-    margin-right: 0.5rem; 
-
+    margin-right: 0.5rem;   
+}
+.nav-item__promos{
+    background-color: $color6; 
 }
 .nav-item__promos:hover{
-    background-color: $color6; 
-    
+   transform: scale(.9);    
 }
 .tab-content:hover{
     border: 2px dashed $color6; 
@@ -18,12 +18,10 @@
   padding: 3% 0 3% 3%;
   img{
     width:90% ;
-    height: 100%;
-    
+    height: 100%;    
   }
   p{
-      text-align: justify;
-     
+      text-align: justify;     
   }
 }
 

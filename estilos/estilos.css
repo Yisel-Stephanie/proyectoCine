@@ -548,13 +548,16 @@ th, td {
 }
 
 .nav-item__promos {
-  background-color: none;
   border: 2px solid purple;
   margin-right: 0.5rem;
 }
 
-.nav-item__promos:hover {
+.nav-item__promos {
   background-color: purple;
+}
+
+.nav-item__promos:hover {
+  transform: scale(0.9);
 }
 
 .tab-content:hover {
