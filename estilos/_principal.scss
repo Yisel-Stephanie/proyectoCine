@@ -1,44 +1,49 @@
 @import "generales";
+.header {
+  width: 100vw;
+  height: 600px;
+  background-image: url(../imagenes/collage2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: fill;
+}
 
-.principal{  
-    position: sticky;
-    top: 0;
-    background-color:$color1;    
-    color:$color2;   
-    height: auto; 
-    z-index: 2;
+.principal {
+  position: sticky;
+  top: 0;
+  background-color: $color1;
+  color: $color2;
+  height: auto;
+  z-index: 2;
 
-    .navbar{
-        @include estiloLetra1();
-        .navbar-nav li a:hover{
-            border-bottom: 3px dashed $color6;
-            width: auto;
-         }       
+  .navbar {
+    @include estiloLetra1();
+    .navbar-nav li a:hover {
+      border-bottom: 3px dashed $color6;
+      width: auto;
     }
+  }
 
-    .navbar-logo{
-        height: 100px;
+  .navbar-logo {
+    height: 100px;
+  }
+
+  .navbar-barra {
+    background-color: $color3;
+  }
+
+  .principal-modoNocturno {
+    background-color: $color3;
+    border: none;
+    cursor: pointer;
+    .fa {
+      color: $color5;
     }
-     
-    .navbar-barra{
-        background-color: $color3;
+    .fa:hover {
+      color: $color1;
     }
-  
-    .principal-modoNocturno{
-        background-color: $color3;
-        border:none;
-        cursor: pointer;  
-        .fa{
-            color:$color5;
-        }
-        .fa:hover{
-            color:  $color1;
-        }
-    }
+  }
 }
 .carousel {
-    z-index: 1;
+  z-index: 1;
 }
-
-
-
