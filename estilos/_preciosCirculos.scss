@@ -11,8 +11,19 @@
   text-align: center;
   animation-iteration-count: infinite;
 }
+@media (max-width: 400px) {
+  .cajas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cajaTexto {
+    font-size: 20px;
+    margin-bottom: -50%;
+  }
+}
 .cajaTexto {
-  //   font-size: 50px;
+  font-size: 30px;
 }
 
 @keyframes animacion {

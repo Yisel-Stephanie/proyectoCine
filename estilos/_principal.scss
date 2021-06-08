@@ -6,15 +6,31 @@
   background-attachment: fixed;
   background-size: cover;
   object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.entradas {
+  @include estiloLetra1();
+  text-align: center;
+  color: $color7;
+  background-color: rgba(12, 12, 12, 0.6);
+  justify-content: center;
+}
+.entrada {
+  color: $color5;
+  font-size: 3rem;
 }
 
 .principal {
   position: sticky;
   top: 0;
   background-color: $color1;
-  color: $color2;
+  color: $color7;
   height: auto;
   z-index: 2;
+  margin-top: -1%;
 
   .navbar {
     @include estiloLetra1();

@@ -6,6 +6,11 @@
   .form-suscribete__datos--titulo {
     @include estiloLetra1;
   }
+  @media (max-width: 600px) {
+    .form-suscribete__img {
+      display: none;
+    }
+  }
   .form-suscribete__img {
     height: 100px;
     text-align: center;
