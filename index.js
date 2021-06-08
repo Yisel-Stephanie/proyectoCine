@@ -3,8 +3,8 @@ const typed = new Typed ('.typed',{
         '<i class="entrada">Aventura</i>',
         '<i class="entrada">Suspenso</i>',
         '<i class="entrada">Terror</i>',
-        '<i class="entrada">Diversion</i>',
-        '<i class="entrada">Emocion</i>',
+        '<i class="entrada">Diversión</i>',
+        '<i class="entrada">Emoción</i>',
         '<i class="entrada">Romance</i>'
     ],
     typeSpeed:35,
