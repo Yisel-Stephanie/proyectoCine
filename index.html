@@ -1,764 +1,1192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Cadena de cine, mira los ultimos estrenos con la ultima tecnologia en proyeccion 2D 3D PLF IMAX y Aprovecha las promos del mes">
-    <meta name="keywords" content="Peliculas, entretenimiento, promociones, anticipadas,estrenos">
-    <title>Cinemas movieMas 🏠 </title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="estilos/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cadena de cine, mira los ultimos estrenos con la ultima tecnologia en proyeccion 2D 3D PLF IMAX y Aprovecha las promos del mes"
+    />
+    <meta
+      name="keywords"
+      content="Peliculas, entretenimiento, promociones, anticipadas,estrenos"
+    />
+    <title>Cinemas movieMas 🏠</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
     <!-- animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="imagenes/3211favicon.ico">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="imagenes/3211favicon.ico"
+    />
+  </head>
 
-</head>
-
-<body>
-    <header>
-        <iframe class="videoPresentacion" width="560" height="315"
-            src="https://www.youtube-nocookie.com/embed/odM92ap8_c0?controls=0&autoplay=0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+  <body>
+    <header class="header my-2">
     </header>
 
     <section class="principal">
-        <a class="navbar-brand" href="#">
-            <img class="navbar-logo" src="./imagenes/logoo.jpg" alt="logo">
-        </a>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-barra">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <button class="principal-modoNocturno">
-                    <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
-                </button>
+      <a class="navbar-brand" href="#">
+        <img class="navbar-logo" src="./imagenes/logoo.jpg" alt="logo" />
+      </a>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-barra">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="principal-modoNocturno">
+            <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
+          </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " aria-current="page" href="cartelera.html">Cartelera</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="precios.html">Precios y Boleteria</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="promociones.html" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Promociones
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="promociones.html">Festivales</a></li>
-                                <li><a class="dropdown-item" href="promociones.html">Anticipadas</a></li>
-                                <li><a class="dropdown-item" href="promociones.html">Promo del mes</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="snacks.html">Snacks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="cartelera.html"
+                  >Cartelera</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="precios.html">Precios y Boleteria</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="promociones.html"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Promociones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="promociones.html"
+                      >Festivales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="promociones.html"
+                      >Anticipadas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="promociones.html"
+                      >Promo del mes</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="snacks.html">Snacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button aria-colspan="carousel-botones" type="button"
-                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1" style="background-color: purple;"></button>
-                        <button aria-colspan="carousel-botones" type="button"
-                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
-                            style="background-color: purple;"></button>
-                        <button aria-colspan="carousel-botones" type="button"
-                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
-                            style="background-color: purple;"></button>
-                        <button aria-colspan="carousel-botones" type="button"
-                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"
-                            style="background-color: purple;"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <a href="precios.html">
-                                <img src="./imgCarrusel/c1.jpg" class="d-block w-100" alt="imgCarrusel">
-                            </a>
-                        </div>
-                        <div class="carousel-item ">
-                            <a href="precios.html">
-                                <img src="./imgCarrusel/c2.jpg" class="d-block w-100" alt="imgCarrusel">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="precios.html">
-                                <img src="./imgCarrusel/c3.jpg" class="d-block w-100" alt="imgCarrusel">
-                            </a>
-                        </div>
-                        <div class="carousel-item active">
-                            <a href="precios.html">
-                                <img src="./imgCarrusel/c4.jpg" class="d-block w-100" alt="imgCarrusel">
-                            </a>
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span aria-hidden="true">
-                            <img src="https://img.icons8.com/plasticine/50/000000/reply-arrow.png" />
-                        </span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span aria-hidden="true">
-                            <img src="https://img.icons8.com/plasticine/50/000000/forward-arrow.png" />
-                        </span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                aria-colspan="carousel-botones"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+                style="background-color: purple"
+              ></button>
+              <button
+                aria-colspan="carousel-botones"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                style="background-color: purple"
+              ></button>
+              <button
+                aria-colspan="carousel-botones"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                style="background-color: purple"
+              ></button>
+              <button
+                aria-colspan="carousel-botones"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+                style="background-color: purple"
+              ></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <a href="precios.html">
+                  <img
+                    src="./imgCarrusel/c1.jpg"
+                    class="d-block w-100"
+                    alt="imgCarrusel"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="precios.html">
+                  <img
+                    src="./imgCarrusel/c2.jpg"
+                    class="d-block w-100"
+                    alt="imgCarrusel"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="precios.html">
+                  <img
+                    src="./imgCarrusel/c3.jpg"
+                    class="d-block w-100"
+                    alt="imgCarrusel"
+                  />
+                </a>
+              </div>
+              <div class="carousel-item active">
+                <a href="precios.html">
+                  <img
+                    src="./imgCarrusel/c4.jpg"
+                    class="d-block w-100"
+                    alt="imgCarrusel"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span aria-hidden="true">
+                <img
+                  src="https://img.icons8.com/plasticine/50/000000/reply-arrow.png"
+                />
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span aria-hidden="true">
+                <img
+                  src="https://img.icons8.com/plasticine/50/000000/forward-arrow.png"
+                />
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
     <form class="formBuscador container" action="">
-        <h1 class="formBuscador-titulo">Cual pelicula quieres ver?. </h1>
-        <section class="formBuscador-opciones">
-            <select class="formBuscador-opciones__item" name="peliculas">
-                <option selected disabled>Pelicula</option>
-                <option value="akira">Akira</option>
-                <option value="caos">Caos</option>
-                <option value="akira">Akira</option>
-                <option value="freaky">Freaky</option>
-                <option value="nomadland">Nomadland</option>
-                <option value="atakan">Atakan</option>
-            </select>
+      <h1 class="formBuscador-titulo">Cual pelicula quieres ver?.</h1>
+      <section class="formBuscador-opciones">
+        <select class="formBuscador-opciones__item" name="peliculas">
+          <option selected disabled>Pelicula</option>
+          <option value="akira">Akira</option>
+          <option value="caos">Caos</option>
+          <option value="akira">Akira</option>
+          <option value="freaky">Freaky</option>
+          <option value="nomadland">Nomadland</option>
+          <option value="atakan">Atakan</option>
+        </select>
 
-            <select class="formBuscador-opciones__item" name="formato">
-                <option selected disabled>Formato</option>
-                <option value="2d">2D</option>
-                <option value="3d">3D</option>
-                <option value="imax">Imax</option>
-                <option value="plf">Plf</option>
-            </select>
+        <select class="formBuscador-opciones__item" name="formato">
+          <option selected disabled>Formato</option>
+          <option value="2d">2D</option>
+          <option value="3d">3D</option>
+          <option value="imax">Imax</option>
+          <option value="plf">Plf</option>
+        </select>
 
-            <select class="formBuscador-opciones__item" name="dia">
-                <option>Dia</option>
-                <option value="2d">Mayo 1</option>
-                <option value="2d">Mayo 2</option>
-            </select>
-            <select class="formBuscador-opciones__item">
-                <option name="hora">Hora</option>
-                <option value="franja1">13:00</option>
-                <option value="franja2">15:00</option>
-                <option value="franja3">18:00</option>
-            </select>
-            <button class="formBuscador-opciones__item">Comprar</button>
-        </section>
+        <select class="formBuscador-opciones__item" name="dia">
+          <option>Dia</option>
+          <option value="2d">Mayo 1</option>
+          <option value="2d">Mayo 2</option>
+        </select>
+        <select class="formBuscador-opciones__item">
+          <option name="hora">Hora</option>
+          <option value="franja1">13:00</option>
+          <option value="franja2">15:00</option>
+          <option value="franja3">18:00</option>
+        </select>
+        <button class="formBuscador-opciones__item">Comprar</button>
+      </section>
     </form>
 
-
     <main>
-        <h2 class="galeria-titulo container">En cartelera </h2>
-        <div class="galeria galeria-items container">
-
-            <!-- Button trigger modal 1 -->
-            <div>
-                <a href="#exampleModal" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item atakan-item  "></div>Atakan
-                </a>
-            </div>
-            <!-- Modal 1 -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Atakan</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Atakan es una roca sangrienta, un enorme bloque de granito en el que los paganos han
-                            sacrificado humanos durante siglos. Un día, un grupo de estudiantes de Historia liderados
-                            por un profesor descienden a las catacumbas de San Petersburgo para hallar este monolito.
-                            Sin embargo, con cada paso que dan hacia las profundidades, la situación se descontrola un
-                            poco más. La muerte les aguarda. ¿Podrán sobrevivir?
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/zsPavEnUr1U"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 2-->
-            <div>
-                <a href="#exampleModal2" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item caos-item "></div> Caos
-                </a>
-            </div>
-            <!-- Modal 2 -->
-            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel2">Caos:El inicio</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            En Prentisstown, Todd ha crecido creyendo que la "Masilla" fue la responsable de liberar un
-                            germen que asesinó a todas las mujeres y contagió con el "ruido" al resto de los hombres.
-                            Tras descubrir un remanso de silencio en un pantano, sus padres adoptivos le obligan a huir
-                            lo más rápido que pueda, dejando todo atrás salvo un mapa del Nuevo Mundo y un mensaje, así
-                            como un sinfín de preguntas sin responder. Pronto descubre la fuente del silencio: una chica
-                            llamada Viola. Los dos deben avisar lo antes posible sobre la inminente llegada de una nave
-                            para que el intendente Prentiss pueda preparar un ejército para la guerra.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/2PC3sAcblr8"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 3-->
-            <div>
-                <a href="#exampleModal3" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item demon-item "></div> Demon Slayer
-                </a>
-            </div>
-            <!-- Modal 3 -->
-            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel3">Demon Slayer</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Kimetsu no Yaiba: Mugen Ressha-hen es una película de anime japonesa de 2020 basada en la
-                            serie de manga shōnen Kimetsu no Yaiba de Koyoharu Gotōge. La película, que es una secuela
-                            directa de la serie de anime de 2019, está dirigida por Haruo Sotozaki y producida por
-                            Ufotable
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/4vMyz71F42I"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 4-->
-            <div>
-                <a href="#exampleModal4" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item espiral-item  "></div> Espiral
-                </a>
-            </div>
-            <!-- Modal 4 -->
-            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel4">Espiral</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Spiral es una próxima película de terror y novena entrega de la Saga Saw. Spiral se basa en
-                            un guion de Josh Stolberg y Pete Goldfinger a partir de una historia creada por Chris Rock.
-                            Está dirigida por Darren Lynn Bousman y protagonizada por Chris Rock, Samuel L. Jackson, Max
-                            Minghella y Marisol Nichols.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/GCD3XHGaIbI"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 5-->
-            <div>
-                <a href="#exampleModal5" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item freaky-item  "></div>Freaky
-                </a>
-            </div>
-            <!-- Modal 5 -->
-            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel5">Freaky</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Tras intercambiar su cuerpo con un asesino en serie (Vince Vaughn), una joven estudiante
-                            (Kathryn Newton) descubre que tiene menos de 24 horas antes de que el cambio sea permanente.
-                            Del director de "Feliz día de tu muerte".
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/JKPQIylTEYs"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 6-->
-            <div>
-                <a href="#exampleModal6" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item guerra-item  "></div>Guerra con mi abuelo
-                </a>
-            </div>
-            <!-- Modal 6 -->
-            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel6">En guerra con mi abuelo</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Es una película de comedia familiar de 2020 dirigida por Tim Hill, a partir de un guion de
-                            Tom J. Astle y Matt Ember, basada en la novela del mismo nombre de Robert Kimmel Smith.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/KfjEumnQroM"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 7-->
-            <div>
-                <a href="#exampleModal7" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item godzilla-item  "></div>Godzilla Vs Kong
-                </a>
-            </div>
-            <!-- Modal 7 -->
-            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel7">Godzilla Vs Kong</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras
-                            criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/Kqg8zLgESyQ"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 8-->
-            <div>
-                <a href="#exampleModal8" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item mortal-item  "></div>Mortal Kombat
-                </a>
-            </div>
-            <!-- Modal 8 -->
-            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel8">Mortal Kombat</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Cole Young, luchador de MMA, desconoce su ascendencia y tampoco sabe por qué el emperador
-                            Shang Tsung ha enviado a su mejor guerrero para atraparlo. Ante esta situación, Cole busca a
-                            Sonya Blade siguiendo las indicaciones de Jax.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/b-dfaJ1plvk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 9-->
-            <div>
-                <a href="#exampleModal9" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item nadie-item  "></div>Nadie
-                </a>
-            </div>
-            <!-- Modal 9 -->
-            <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel9">Nadie</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Hutch, un hombre corriente, deja que roben en su casa sin oponer resistencia. Su esposa y su
-                            hijo empiezan a tratarlo con frialdad, decepcionados por su cobardía, por lo que Hutch
-                            cambia de personalidad y abraza el riesgo y la violencia.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/0wDj8jukSvA"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 10-->
-            <div>
-                <a href="#exampleModal10" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item peq-item  "></div>Pequeños Secretos
-                </a>
-            </div>
-            <!-- Modal 10 -->
-            <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel10">Pequeños Secretos</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Un sheriff y un detective de homicidios colaboran para dar caza a un astuto asesino en Los
-                            Ángeles. Mientras rastrean al culpable, el pasado de un de ellos comienza a salir a la luz y
-                            puede poner en peligro la investigación.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/_8fxE0UmBxc"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 11-->
-            <div>
-                <a href="#exampleModal11" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item ruega-item  "></div>Ruega por Nosotros
-                </a>
-            </div>
-            <!-- Modal 11 -->
-            <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel11">Ruega por Nosotros</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Es una película de terror sobrenatural estadounidense de 2021 escrita, producida y dirigida
-                            por Evan Spiliotopoulos, basada en la novela Shrine de 1983 de James Herbert
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/6h37JM2cvsY"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Button trigger modal 12-->
-            <div>
-                <a href="#exampleModal12" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item tom-item  "></div>Tom & Jerry
-                </a>
-            </div>
-            <!-- Modal 12 -->
-            <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel12">Tom & Jerry</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Jerry se muda a un hotel de Nueva York, pero un desesperado planificador de bodas contrata a
-                            Tom para deshacerse de él.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/HQ0gkD64Ecc"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Button trigger modal 13-->
-            <div>
-                <a href="#exampleModal13" type="button" data-bs-toggle="modal">
-                    <div class="galeria-items__item akira-item"></div> Akira
-                </a>
-            </div>
-            <!-- Modal 13 -->
-            <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel13">Akira</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h3>Sinopsis</h3>
-                            Un joven telépata deambula por las calles de Tokio al darse cuenta de que los poderes que
-                            posee son asombrosos.
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/nA8KmHC2Z-g"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                            <a href="/precios.html" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <h2 class="galeria-titulo container">En cartelera</h2>
+      <div class="galeria galeria-items container">
+        <!-- Button trigger modal 1 -->
+        <div>
+          <a href="#exampleModal" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item atakan-item"></div>
+            Atakan
+          </a>
         </div>
+        <!-- Modal 1 -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Atakan</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Atakan es una roca sangrienta, un enorme bloque de granito en el
+                que los paganos han sacrificado humanos durante siglos. Un día,
+                un grupo de estudiantes de Historia liderados por un profesor
+                descienden a las catacumbas de San Petersburgo para hallar este
+                monolito. Sin embargo, con cada paso que dan hacia las
+                profundidades, la situación se descontrola un poco más. La
+                muerte les aguarda. ¿Podrán sobrevivir?
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/zsPavEnUr1U"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 2-->
+        <div>
+          <a href="#exampleModal2" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item caos-item"></div>
+            Caos
+          </a>
+        </div>
+        <!-- Modal 2 -->
+        <div
+          class="modal fade"
+          id="exampleModal2"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">
+                  Caos:El inicio
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                En Prentisstown, Todd ha crecido creyendo que la "Masilla" fue
+                la responsable de liberar un germen que asesinó a todas las
+                mujeres y contagió con el "ruido" al resto de los hombres. Tras
+                descubrir un remanso de silencio en un pantano, sus padres
+                adoptivos le obligan a huir lo más rápido que pueda, dejando
+                todo atrás salvo un mapa del Nuevo Mundo y un mensaje, así como
+                un sinfín de preguntas sin responder. Pronto descubre la fuente
+                del silencio: una chica llamada Viola. Los dos deben avisar lo
+                antes posible sobre la inminente llegada de una nave para que el
+                intendente Prentiss pueda preparar un ejército para la guerra.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/2PC3sAcblr8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 3-->
+        <div>
+          <a href="#exampleModal3" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item demon-item"></div>
+            Demon Slayer
+          </a>
+        </div>
+        <!-- Modal 3 -->
+        <div
+          class="modal fade"
+          id="exampleModal3"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">
+                  Demon Slayer
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Kimetsu no Yaiba: Mugen Ressha-hen es una película de anime
+                japonesa de 2020 basada en la serie de manga shōnen Kimetsu no
+                Yaiba de Koyoharu Gotōge. La película, que es una secuela
+                directa de la serie de anime de 2019, está dirigida por Haruo
+                Sotozaki y producida por Ufotable
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/4vMyz71F42I"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 4-->
+        <div>
+          <a href="#exampleModal4" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item espiral-item"></div>
+            Espiral
+          </a>
+        </div>
+        <!-- Modal 4 -->
+        <div
+          class="modal fade"
+          id="exampleModal4"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel4">Espiral</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Spiral es una próxima película de terror y novena entrega de la
+                Saga Saw. Spiral se basa en un guion de Josh Stolberg y Pete
+                Goldfinger a partir de una historia creada por Chris Rock. Está
+                dirigida por Darren Lynn Bousman y protagonizada por Chris Rock,
+                Samuel L. Jackson, Max Minghella y Marisol Nichols.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/GCD3XHGaIbI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 5-->
+        <div>
+          <a href="#exampleModal5" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item freaky-item"></div>
+            Freaky
+          </a>
+        </div>
+        <!-- Modal 5 -->
+        <div
+          class="modal fade"
+          id="exampleModal5"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel5">Freaky</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Tras intercambiar su cuerpo con un asesino en serie (Vince
+                Vaughn), una joven estudiante (Kathryn Newton) descubre que
+                tiene menos de 24 horas antes de que el cambio sea permanente.
+                Del director de "Feliz día de tu muerte".
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/JKPQIylTEYs"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 6-->
+        <div>
+          <a href="#exampleModal6" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item guerra-item"></div>
+            Guerra con mi abuelo
+          </a>
+        </div>
+        <!-- Modal 6 -->
+        <div
+          class="modal fade"
+          id="exampleModal6"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel6">
+                  En guerra con mi abuelo
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Es una película de comedia familiar de 2020 dirigida por Tim
+                Hill, a partir de un guion de Tom J. Astle y Matt Ember, basada
+                en la novela del mismo nombre de Robert Kimmel Smith.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/KfjEumnQroM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 7-->
+        <div>
+          <a href="#exampleModal7" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item godzilla-item"></div>
+            Godzilla Vs Kong
+          </a>
+        </div>
+        <!-- Modal 7 -->
+        <div
+          class="modal fade"
+          id="exampleModal7"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel7">
+                  Godzilla Vs Kong
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Godzilla y Kong, dos de las fuerzas más poderosas de un planeta
+                habitado por aterradoras criaturas, se enfrentan en un
+                espectacular combate que sacude los cimientos de la humanidad.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/Kqg8zLgESyQ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 8-->
+        <div>
+          <a href="#exampleModal8" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item mortal-item"></div>
+            Mortal Kombat
+          </a>
+        </div>
+        <!-- Modal 8 -->
+        <div
+          class="modal fade"
+          id="exampleModal8"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel8">
+                  Mortal Kombat
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Cole Young, luchador de MMA, desconoce su ascendencia y tampoco
+                sabe por qué el emperador Shang Tsung ha enviado a su mejor
+                guerrero para atraparlo. Ante esta situación, Cole busca a Sonya
+                Blade siguiendo las indicaciones de Jax.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/b-dfaJ1plvk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 9-->
+        <div>
+          <a href="#exampleModal9" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item nadie-item"></div>
+            Nadie
+          </a>
+        </div>
+        <!-- Modal 9 -->
+        <div
+          class="modal fade"
+          id="exampleModal9"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel9">Nadie</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Hutch, un hombre corriente, deja que roben en su casa sin oponer
+                resistencia. Su esposa y su hijo empiezan a tratarlo con
+                frialdad, decepcionados por su cobardía, por lo que Hutch cambia
+                de personalidad y abraza el riesgo y la violencia.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/0wDj8jukSvA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 10-->
+        <div>
+          <a href="#exampleModal10" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item peq-item"></div>
+            Pequeños Secretos
+          </a>
+        </div>
+        <!-- Modal 10 -->
+        <div
+          class="modal fade"
+          id="exampleModal10"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel10">
+                  Pequeños Secretos
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Un sheriff y un detective de homicidios colaboran para dar caza
+                a un astuto asesino en Los Ángeles. Mientras rastrean al
+                culpable, el pasado de un de ellos comienza a salir a la luz y
+                puede poner en peligro la investigación.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/_8fxE0UmBxc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 11-->
+        <div>
+          <a href="#exampleModal11" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item ruega-item"></div>
+            Ruega por Nosotros
+          </a>
+        </div>
+        <!-- Modal 11 -->
+        <div
+          class="modal fade"
+          id="exampleModal11"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel11">
+                  Ruega por Nosotros
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Es una película de terror sobrenatural estadounidense de 2021
+                escrita, producida y dirigida por Evan Spiliotopoulos, basada en
+                la novela Shrine de 1983 de James Herbert
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/6h37JM2cvsY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 12-->
+        <div>
+          <a href="#exampleModal12" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item tom-item"></div>
+            Tom & Jerry
+          </a>
+        </div>
+        <!-- Modal 12 -->
+        <div
+          class="modal fade"
+          id="exampleModal12"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel12">
+                  Tom & Jerry
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Jerry se muda a un hotel de Nueva York, pero un desesperado
+                planificador de bodas contrata a Tom para deshacerse de él.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/HQ0gkD64Ecc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal 13-->
+        <div>
+          <a href="#exampleModal13" type="button" data-bs-toggle="modal">
+            <div class="galeria-items__item akira-item"></div>
+            Akira
+          </a>
+        </div>
+        <!-- Modal 13 -->
+        <div
+          class="modal fade"
+          id="exampleModal13"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel13">Akira</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h3>Sinopsis</h3>
+                Un joven telépata deambula por las calles de Tokio al darse
+                cuenta de que los poderes que posee son asombrosos.
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/nA8KmHC2Z-g"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <a href="/precios.html" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <h2 class="container">Top cinco y Promo del mes</h2>
     <div class="novedades container">
-        <table class="novedades-tablaTop container">
-            <thead class="novedades-tablaTop__thead">
-                <tr>
-                    <th>Lugar</th>
-                    <th>Peliculas</th>
+      <table class="novedades-tablaTop container">
+        <thead class="novedades-tablaTop__thead">
+          <tr>
+            <th>Lugar</th>
+            <th>Peliculas</th>
 
-                    <th>Director</th>
-                </tr>
-            </thead>
+            <th>Director</th>
+          </tr>
+        </thead>
 
-            <tbody class="novedades-tablaTop__tbody">
-                <tr>
-                    <td># 1</td>
-                    <td>Godzilla Vs. Kong - Ciencia ficcion</td>
-                    <td>Adam Wingard</td>
+        <tbody class="novedades-tablaTop__tbody">
+          <tr>
+            <td># 1</td>
+            <td>Godzilla Vs. Kong - Ciencia ficcion</td>
+            <td>Adam Wingard</td>
+          </tr>
 
-                </tr>
+          <tr>
+            <td># 2</td>
+            <td>Tom y Jerry - Infantil</td>
+            <td>Tim Story</td>
+          </tr>
 
-                <tr>
-                    <td># 2</td>
-                    <td>Tom y Jerry - Infantil</td>
-                    <td>Tim Story</td>
-                </tr>
+          <tr>
+            <td># 3</td>
+            <td>Mujer Maravilla 84' - Aventura</td>
+            <td>Patty Jenkins</td>
+          </tr>
 
-                <tr>
-                    <td># 3</td>
-                    <td>Mujer Maravilla 84' - Aventura</td>
-                    <td>Patty Jenkins</td>
+          <tr>
+            <td># 4</td>
+            <td>Tenet - Ciencia ficcion</td>
+            <td>Christopher Nolan</td>
+          </tr>
 
-                </tr>
+          <tr>
+            <td># 5</td>
+            <td>Los intrusos - Terror</td>
+            <td>Julius Berg</td>
+          </tr>
+        </tbody>
+      </table>
 
-                <tr>
-                    <td># 4</td>
-                    <td>Tenet - Ciencia ficcion</td>
-                    <td>Christopher Nolan</td>
-
-                </tr>
-
-                <tr>
-                    <td># 5</td>
-                    <td> Los intrusos - Terror</td>
-                    <td>Julius Berg</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="novedades-promos">
-            <div class="novedades-promo__infoImagen">
-
-                <button class="novedes-promo__btn">
-                    <a href="./promociones.html">
-                        Ver mas </a><br>
-                    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-                </button>
-                <p>Conoce la promo del mes </p>
-            </div>
+      <div class="novedades-promos">
+        <div class="novedades-promo__infoImagen">
+          <button class="novedes-promo__btn">
+            <a href="./promociones.html"> Ver mas </a><br />
+            <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+          </button>
+          <p>Conoce la promo del mes</p>
         </div>
-
+      </div>
     </div>
-    <hr>
+    <hr />
 
-    <form class="form-suscribete animate__animated animate__bounceInLeft animate__slower" action="">
-        <div class="form-suscribete__img ">
-            <img src="./imagenes/sobree.jpg" alt="imagenSobrecito">
+    <form
+      class="
+        form-suscribete
+        animate__animated animate__bounceInLeft animate__slower
+      "
+      action=""
+    >
+      <div class="form-suscribete__img">
+        <img src="./imagenes/sobree.jpg" alt="imagenSobrecito" />
+      </div>
+      <div class="form-suscribete__datos">
+        <legend class="form-suscribete__datos--titulo">Suscribete</legend>
+        <br />
+        <label for="">
+          Nombre:
+          <input type="text" />
+        </label>
+        <label for="">
+          Email:
+          <input type="email" />
+        </label>
+        <select>
+          <option disabled selected>Sexo</option>
+          <option value="value1">Femenino</option>
+          <option value="value2">Masculino</option>
+        </select>
+        <br />
+        <br />
+        <label for="" class="estiloLetra3">
+          ¿Cuál o cuales son tus generos favoritos? <br />
+          <input type="checkbox" name="comedio" value="" /> Comedia <br />
+          <input type="checkbox" name="accion" value="" /> Accion <br />
+          <input type="checkbox" name="aventura" value="" /> Aventura <br />
+          <input type="checkbox" name="terror" value="" /> Terror <br />
+          <input type="checkbox" name="suspenso" value="" /> Suspenso <br />
+          <input type="checkbox" name="cienciaFiccion" value="" /> Ciencia
+          Ficcion <br />
+        </label>
+
+        <textarea name="comment" cols="20" rows="auto">Escribenos ✍️ </textarea>
+
+        <div class="form-suscribete__datos--btnSuscripcion">
+          <button class="btn_control" type="reset">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
+          <button class="btn_control" type="submit">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </button>
         </div>
-        <div class="form-suscribete__datos">
-            <legend class="form-suscribete__datos--titulo">Suscribete</legend>
-            <br>
-            <label for="">
-                Nombre:
-                <input type="text">
-            </label>
-            <label for="">
-                Email:
-                <input type="email">
-            </label>
-            <select>
-                <option disabled selected>Sexo</option>
-                <option value="value1">Femenino</option>
-                <option value="value2">Masculino</option>
-            </select> <br> <br>
-            <label for="" class="estiloLetra3">
-                ¿Cuál o cuales son tus generos favoritos? <br>
-                <input type="checkbox" name="comedio" value=""> Comedia <br>
-                <input type="checkbox" name="accion" value=""> Accion <br>
-                <input type="checkbox" name="aventura" value=""> Aventura <br>
-                <input type="checkbox" name="terror" value=""> Terror <br>
-                <input type="checkbox" name="suspenso" value=""> Suspenso <br>
-                <input type="checkbox" name="cienciaFiccion" value=""> Ciencia Ficcion <br>
-            </label>
-
-            <textarea name="comment" cols="20" rows="auto">Escribenos ✍️ </textarea>
-
-            <div class="form-suscribete__datos--btnSuscripcion">
-                <button type="reset"><i class="fa fa-trash" aria-hidden="true"></i>
-                </button>
-                <button type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i>
-                </button>
-            </div>
-        </div>
+      </div>
     </form>
-    <hr>
+    <hr />
 
     <footer class="principal footer">
-        <div class="footer-datos">
-            <h3>Informacion</h3>
-            <ul>
-                <li><a href="#"> Moreno 1326 caba</a></li>
-                <li><a href="#"> Quienes Somos</a></li>
-                <li><a href="#"> Recursos Humanos</a></li>
-                <li><a href="#">Trabaja con Nosotros</a></li>
-            </ul>
-        </div>
+      <div class="footer-datos">
+        <h3>Informacion</h3>
+        <ul>
+          <li><a href="#"> Moreno 1326 caba</a></li>
+          <li><a href="#"> Quienes Somos</a></li>
+          <li><a href="#"> Recursos Humanos</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+        </ul>
+      </div>
 
-        <div class="footer-ubicanos">
-            <h3>Siguenos</h3>
-            <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a> <br>
-        </div>
+      <div class="footer-ubicanos">
+        <h3>Siguenos</h3>
+        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="#"
+          ><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+        <br />
+      </div>
 
-        <div class="footer-mapa">
-            <h3>Ubicanos</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9287.432059920297!2d-58.38713957479667!3d-34.614196725323204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1617942538569!5m2!1ses-419!2sar"
-                width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+      <div class="footer-mapa">
+        <h3>Ubicanos</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9287.432059920297!2d-58.38713957479667!3d-34.614196725323204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1617942538569!5m2!1ses-419!2sar"
+          width="100"
+          height="100"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </footer>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

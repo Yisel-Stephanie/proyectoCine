@@ -1,48 +1,49 @@
-.form-suscribete{
-    display: flex;
-    justify-content: space-evenly; 
-    background-color: $color7; 
-   
+.form-suscribete {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $color7;
 
-    .form-suscribete__datos--titulo{
-     @include estiloLetra1;
-   }
-    .form-suscribete__img{
-        height: 100px;   
-        text-align: center;  
-        color: $color6;
-        margin:$marginBasico;
-        max-width: 45%; 
-        img{
-            border-radius: 10%;         
-        }
+  .form-suscribete__datos--titulo {
+    @include estiloLetra1;
+  }
+  .form-suscribete__img {
+    height: 100px;
+    text-align: center;
+    color: $color6;
+    margin: $marginBasico;
+    max-width: 45%;
+    img {
+      border-radius: 10%;
     }
+  }
 
-    .form-suscribete__datos{
-        width: 60%;  
-        input,select,textarea{
-            background-color: transparent;
-            border: none;    
-            padding: 0.5%;
-            color:$color1;
-            font-size: 1  rem;
-            font-weight: bold;
-            border-bottom: 1px solid $color6; 
-        }
-        .form-suscribete__datos--btnSuscripcion{
-            background-color: transparent;
-            font-size: 2rem;
-            margin-left: 5%;    
-            display: flex;  
-            justify-content: space-around;  
-            margin-bottom: $marginBasico*2;     
-           
-            :hover{
-                background-color: $color6;
-                border-radius: 50%;
-                padding: 1%;
-            } 
-        }
+  .form-suscribete__datos {
+    width: 60%;
+    input,
+    select,
+    textarea {
+      background-color: transparent;
+      border: none;
+      padding: 0.5%;
+      color: $color1;
+      font-size: 1 rem;
+      font-weight: bold;
+      border-bottom: 1px solid $color6;
     }
+    .form-suscribete__datos--btnSuscripcion {
+      font-size: 2rem;
+      margin-left: 5%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: $marginBasico * 2;
 
+      :hover {
+        background-color: $color4;
+        border-radius: 10%;
+      }
+      .btn_control {
+        border: none;
+      }
+    }
+  }
 }
